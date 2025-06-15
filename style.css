@@ -17,7 +17,7 @@ body {
 .main-header {
   background-color: #f7f7f7;
   padding: 20px 40px;
-  margin-bottom: 60px;
+
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -42,10 +42,10 @@ nav a:link:last-child {
   margin-right: 0;
 }
 
-article {
+/* article {
   margin-bottom: 0px;
   flex: 1;
-}
+} */
 h1,
 h2,
 h3 {
@@ -150,7 +150,7 @@ aside {
   /* padding-top: 50px;
   padding-bottom: 50px; */
   padding: 50px 0;
-  flex: 0 0 300px;
+  /* flex: 0 0 300px; */
 }
 
 /* .first-li {
@@ -253,9 +253,34 @@ button {
   font-weight: normal;
   font-style: italic;
 }
-.row {
+/* flex layout */
+/* .row {
   display: flex;
   align-items: flex-start;
   gap: 75px;
   margin-bottom: 60px;
+} */
+
+/* CSS GRID */
+.container{
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
+  
+  
+}
+.main-header{
+  grid-column: 1/-1;
+  margin-bottom: 0;
+  
+
+}
+aside{
+
+}
+footer{
+  grid-column: 1/-1;
+
 }
